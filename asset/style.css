@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: monospace;
+}
+header {
+  width: 100%;
+  height: 38.4px;
+  border-bottom: 0.0625rem solid #eee;
+}
+a {
+  display: none;
+}
+.btn {
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.625rem;
+}
+.btn:hover {
+  background: #eee;
+}
+.r {
+  float: right;
+}
+.l {
+  float: left;
+}
+#txt {
+  width: 100%;
+  height: calc(100% - 39.4px);
+  position: fixed;
+  resize: none;
+  border: 0;
+  outline: 0;
+  padding: 0;
+}
+#inp {
+  display: none;
+}
