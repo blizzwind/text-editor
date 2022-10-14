@@ -28,4 +28,14 @@ function sa() {
   a.download = "save.txt";
   a.click();
 }
+function tab(e) {
+  if (e.key == "Tab") {
+    e.preventDefault();
+    start = this.selectionStart;
+    end = this.selectionEnd;
+    this.value = this.value.substring(0, start) + "\t" + this.value.substring(end);
+    this.selectionStart = this.selectionEnd = start + 1;
+  }
+}
 document.getElementById("inp").addEventListener("change", lo);
+document.getElementById("txt").addEventListener("keydown", tab);
